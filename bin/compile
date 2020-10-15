@@ -18,6 +18,8 @@ mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 mkdir -p ffmpeg
 cd ffmpeg
+
+echo "uploading ffmpeg" | indent
 curl -L --silent $DOWNLOAD_URL | tar xJ --strip-components=1
 
 echo "exporting PATH" | indent
